@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <!--JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  
+    <link rel="stylesheet" type="text/css" href="jeremys_site_style.css">
+
+    <title>Jeremy's Site!</title>
+
+    <style type="text/css">
+      #demo-table{
+         border: 1px solid red;
+      }
+      </style>
+
+
+    </head>
+    <body>
+      <header>
+        <div class="container-fluid"> <!--Event listener for mouseover and mouseout.-->
+          <nav class="navbar"> <!--Use the .css page to adjust this.-->
+            <div>
+              <a class="active" href="index.html">Home</a>
+              <a href="jeremys_site_about_me.html">About me</a>
+              <a href="jeremy_site_contact_me.html">Contact me</a>
+            </div>
+            <div align="right">
+              <input type="text" id="fname" size="20" maxlength="12" placeholder="First Name"/>
+              <input type="text" id="lname" size="20" maxlength="12" placeholder="Last Name"/>
+              <button class="btn btn-primary" id="mybtn">Search</button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!--Here is the first group of columns-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="column left">
+            <h1>Jeremy's site.</h1>
+            <p style="font-size: 18pt;">This is a test website I created to practice my web building skills. It 
+              is a very basic website. I am going to add different events on the page.
+              If you have any ideas for me to try please let me know. 
+            </p>
+          </div>
+          <div class="column middle">
+              <img src="https://s3.us-west-2.amazonaws.com/jeremysite.com/myPicture.jpg" class="float-right rounded-circle" height="400px" width="400px">
+          </div>
+          <div class="column right">
+            <h3>Enter your name to find your page.</h3>
+            <p style="font-size: 18pt;">I am going to be making different pages for different people, but this 
+            is a slow process, so if your name is not working don't worry. I will be making it soon! Please be patient.
+            </p>
+          </div>
+          <table id="demo-table" style="border: 1px solid black;">
+            <tr>
+            </tr>
+            </table>
+        </div>
+      </div>
+      <!--This is the end of the first columns-->
+      <span class="brlarge"></span>
+    <footer align="center">
+      <div>
+        <h5>Jeremy's Site</h5>
+        <h6>Copyright @ March, 2022: Jeremy Schlagel</h6>
+      </div>
+      <div>
+        <p>
+            <script>
+                var today = new Date();
+                document.write(today.toDateString());
+            </script>
+        </p>
+      </div>     
+    </footer>
+
+      <script src="jeremy_site_script.js"></script>
+    </body>
+</html>

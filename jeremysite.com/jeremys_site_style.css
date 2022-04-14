@@ -1,0 +1,77 @@
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightsteelblue;
+ }
+
+ body{
+     background-color: lightgrey;
+ }
+
+ .brlarge{
+  display: block;
+  margin-bottom: 10em;
+}
+
+ 
+
+ /*navbar controls start*/
+
+ .navbar {
+    width: 100%;
+    background-color: lightblue;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 10; /* Four links of equal widths */
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: black;
+  }
+  
+  .navbar a.active {
+    background-color: blue;
+  }
+  
+  @media screen and (max-width: 500px) {  /*This will adjust navbar on small screens.*/
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+  /*Navbar controls end*/
+
+  .column {
+    float: center;
+  }
+
+  .columnAbout { /*This adjusts the columns on the about me page.*/
+    width: 50%;
+  }
+  
+  .left, .right {
+    width: 25%;
+  }
+  
+  .middle {
+    align-items: center;
+    text-align: center;
+    width: 50%;
+  }
+  @media screen and (max-width: 600px) { /*This will adjust columns on small screens.*/
+    .column {
+      width: 100%;
+    }
+  }
+
